@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="photo_gallery.css" type="text/css">
+</head>
+<body>
+    <section>
+        <div class="full-img" id="fullImgBox">
+            <img src="../image/Image1.png" id="fullImg"> 
+            <span onclick="closeFullImg()"><svg  width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg></span> 
+        </div>
+        <div class="container">
+            <div class="image">
+             <img src="../image/Image1.png" alt="">
+            </div>
+            <div class="averlayer">
+                <div class="info">
+                    <p class="img-desc">Fennec<br> fox</p>
+                    <p class="orgin">India</p>
+                   
+                </div>
+                <p class="know-more" onclick="openFullImg(this.src='../image/Image1.png')">Know more 
+                    <img src="../image/arrow.png" alt="" class="arrow">
+                </p>
+            </div>
+         </div>   
+           
+         <div class="container">
+            <div class="image">
+                <img src="../image/Image2.png" alt="">
+                </div>
+                <div class="overlayer">
+                    <div class="info">
+                        <p class="img-desc">Humpback Whale</p>
+                        <p class="orgin">South Africa</p>
+                        
+                    </div>
+                    <p class="know-more" onclick="openFullImg(this.src='../image/Image2.png')">Know more 
+                        <img src="../image/arrow.png" alt="" class="arrow">
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div class="container">
+                <div class="image" >
+                    <img src="../image/Image3.png" alt="">
+                    </div>
+                    <div class="overlayer">
+                        <div class="info">
+                            <p class="img-desc">Common Brown Baboon</p>
+                            <p class="orgin">South Africa</p>
+                          
+                        </div>
+                         <p class="know-more" onclick="openFullImg(this.src='../image/Image3.png')">Know more 
+                            <img src="../image/arrow.png" alt="" class="arrow">
+                        </p>
+                    </div>
+             </div>
+
+             <div class="container">
+                <div class="image" >
+                    <img src="../image/Image4.png" alt="">
+                    </div>
+                    <div class="overlayer">
+                        <div class="info">
+                            
+                            <p class="img-desc">Spotted <br> Deer</p>
+                            <p class="orgin">South Africa</p>
+                            
+                        </div>
+                        <p class="know-more" onclick="openFullImg(this.src='../image/Image3.png')">Know more 
+                            <img src="../image/arrow.png" alt="" class="arrow">
+                        </p>
+                        
+                    </div>
+             </div>
+            
+    </section>
+
+    
+
+    
+  
+    <script src="photo_gallery.js"></script>
+</body>
+</html>
